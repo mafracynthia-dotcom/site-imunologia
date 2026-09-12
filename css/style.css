@@ -244,6 +244,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 4px;
 }
 
 .brand-title {
