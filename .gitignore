@@ -1,0 +1,5 @@
+# Arquivos de script local / temporários
+serve.ps1
+*.tmp
+.DS_Store
+Thumbs.db

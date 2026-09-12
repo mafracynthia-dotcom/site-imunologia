@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="380" height="72">
+  <defs>
+    <!-- Gradiente Fundo Teal Médico -->
+    <linearGradient id="tealGradLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#126867"/>
+      <stop offset="50%" stop-color="#0D5C5B"/>
+      <stop offset="100%" stop-color="#083E3D"/>
+    </linearGradient>
+
+    <!-- Gradiente Dourado Nobre -->
+    <linearGradient id="goldGradLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C799"/>
+      <stop offset="50%" stop-color="#C09A67"/>
+      <stop offset="100%" stop-color="#9E7645"/>
+    </linearGradient>
+
+    <!-- Sombra Sutil -->
+    <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0D5C5B" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- ================= EMBLEMA ================= -->
+  <g transform="translate(6, 6)">
+    <!-- Base do Emblema -->
+    <rect x="0" y="0" width="60" height="60" rx="18" fill="url(#tealGradLogo)" filter="url(#logoShadow)"/>
+    <rect x="1.5" y="1.5" width="57" height="57" rx="16.5" fill="none" stroke="url(#goldGradLogo)" stroke-width="1.2" stroke-opacity="0.85"/>
+
+    <!-- Cruz Médica Suave -->
+    <path d="M30 14 V46 M14 30 H46" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.18" stroke-linecap="round"/>
+
+    <!-- Arco de Proteção Imunológica -->
+    <path d="M16 23 C 22 17, 38 17, 44 23" fill="none" stroke="url(#goldGradLogo)" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Anticorpo Central (Y) Imunoglobulina -->
+    <!-- Haste Fc -->
+    <line x1="30" y1="31" x2="30" y2="47" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+    <line x1="30" y1="31" x2="30" y2="47" stroke="url(#goldGradLogo)" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Braços Fab -->
+    <path d="M30 31 C 27 25, 22 22, 19 19" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M30 31 C 27 25, 22 22, 19 19" fill="none" stroke="url(#goldGradLogo)" stroke-width="1.8" stroke-linecap="round"/>
+
+    <path d="M30 31 C 33 25, 38 22, 41 19" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M30 31 C 33 25, 38 22, 41 19" fill="none" stroke="url(#goldGradLogo)" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Nódulos de Antígeno -->
+    <circle cx="19" cy="19" r="3" fill="url(#goldGradLogo)" stroke="#FFFFFF" stroke-width="1"/>
+    <circle cx="41" cy="19" r="3" fill="url(#goldGradLogo)" stroke="#FFFFFF" stroke-width="1"/>
+    <circle cx="30" cy="31" r="2.4" fill="#FFFFFF"/>
+    <circle cx="30" cy="47" r="2.4" fill="url(#goldGradLogo)"/>
+  </g>
+
+  <!-- ================= TIPOGRAFIA EDITORIAL ================= -->
+  <g transform="translate(80, 0)">
+    <!-- Título Principal -->
+    <text x="0" y="32" font-family="'Playfair Display', Georgia, serif" font-size="21" font-weight="700" fill="#1E293B" letter-spacing="-0.2">
+      Imunologia
+    </text>
+    <text x="122" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="600" fill="#0D5C5B" letter-spacing="1.2">
+      NA PRÁTICA
+    </text>
+
+    <!-- Linha Divisória Fina Dourada -->
+    <line x1="0" y1="41" x2="280" y2="41" stroke="url(#goldGradLogo)" stroke-width="1" stroke-opacity="0.6"/>
+
+    <!-- Subtítulo / Nome da Professora -->
+    <text x="0" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#64748B" letter-spacing="1">
+      PROFª DRA. CYNTHIA MAFRA FONSECA DE LIMA
+    </text>
+  </g>
+</svg>
