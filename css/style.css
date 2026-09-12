@@ -137,6 +137,8 @@ img {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 .announcement-bar .badge-pulse {
@@ -264,7 +266,8 @@ img {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 32px;
+  gap: 22px;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -273,6 +276,7 @@ img {
   color: var(--text-secondary);
   position: relative;
   padding: 6px 0;
+  white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
