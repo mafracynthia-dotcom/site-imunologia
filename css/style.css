@@ -123,7 +123,7 @@ img {
 }
 
 /* ==========================================================================
-   BARRA SUPERIOR DE ANÚNCIOS / NOTIFICAÇÃO
+   BARRA SUPERIOR (ANNOUNCEMENT)
    ========================================================================== */
 .announcement-bar {
   background-color: var(--primary-teal);
@@ -137,8 +137,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  white-space: nowrap;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* Fix para não quebrar no mobile */
 }
 
 .announcement-bar .badge-pulse {
@@ -153,6 +152,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
 }
 
 .announcement-bar .badge-pulse::before {
@@ -175,6 +175,7 @@ img {
   color: #FFFFFF;
   font-weight: 600;
   margin-left: 6px;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -184,7 +185,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(250, 247, 242, 0.92);
+  background-color: rgba(255, 255, 255, 0.98); /* Fundo branco para a logo JPEG/PNG combinar melhor */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
@@ -207,17 +208,17 @@ img {
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  text-decoration: none;
 }
 
 .brand-logo-icon {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   display: block;
   flex-shrink: 0;
-  border-radius: 14px;
   transition: transform var(--transition-normal);
-  filter: drop-shadow(0 4px 10px rgba(13, 92, 91, 0.2));
+  object-fit: contain;
 }
 
 .brand-logo:hover .brand-logo-icon {
@@ -242,23 +243,26 @@ img {
 .brand-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .brand-title {
   font-family: var(--font-serif-display);
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--primary-teal);
   letter-spacing: -0.01em;
-  line-height: 1.15;
+  line-height: 1.2;
+  max-width: 280px;
 }
 
 .brand-subtitle {
-  font-size: 0.725rem;
+  font-size: 0.65rem;
   font-weight: 600;
-  color: var(--primary-teal);
-  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-top: 2px;
 }
 
 /* Menu de Navegação */
@@ -1683,7 +1687,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-menu {
     position: fixed;
     top: 84px;
