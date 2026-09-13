@@ -201,7 +201,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 84px;
+  min-height: 84px;
+  padding: 16px 0;
 }
 
 /* Logomarca */
@@ -244,7 +245,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 .brand-title {
@@ -1743,4 +1744,11 @@ img {
   .simulator-box {
     padding: 28px 20px;
   }
+}
+
+@media (max-width: 500px) {
+  .brand-title { font-size: 0.95rem; line-height: 1.15; }
+  .brand-subtitle { font-size: 0.6rem; }
+  .brand-logo-icon { width: 44px; height: 44px; }
+  .nav-wrapper { padding: 12px 0; }
 }
